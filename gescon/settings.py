@@ -32,7 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
 
-    'gestor.apps.ChatConfig',
+    'gestor.apps.GestorConfig',
 
     'django.contrib.admin',
     'django.contrib.auth',

@@ -16,7 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from gestor import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('ingredient/register/', views.register_ingredient, name='register_ingredient'),
 ]
