@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, HttpResponse
 from .models import Ingredient
 
 def register_ingredient(request):
@@ -8,4 +8,8 @@ def register_ingredient(request):
         quantity = request.POST.get('quantity')
         Ingredient.objects.create(name=name, price_per_unit=price_per_unit, quantity=quantity)
         return redirect('ingredient_list')  # Redirect to ingredient list view
-    return render(request, 'gestor/ingredient_form.html')
+    return render(request, 'ingredient_form.html')
+
+
+def home(resquest):
+    return HttpResponse('Hello World!')
