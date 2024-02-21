@@ -1,7 +1,7 @@
 from django.urls import path
-from . import views
+from . import views  # Import the views module from the same directory
 
 urlpatterns = [
-    path('', views.home, name='home'),
-    path('ingredient/register/', views.register_ingredient, name='register_ingredient'),
+    path('ingredient/add/', views.register_ingredient, name='register_ingredient'),
+    path('ingredient/list/', views.ingredient_list, name='ingredient_list'),
 ]

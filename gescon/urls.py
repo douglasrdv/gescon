@@ -20,6 +20,5 @@ from gestor import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('ingredient/register/', views.register_ingredient, name='register_ingredient'),
-    path('', include('gestor.urls'))
+    path('', include('gestor.urls')),
 ]
