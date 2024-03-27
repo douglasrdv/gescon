@@ -1,5 +1,5 @@
 from django.urls import path
-from . import views  # Import the views module from the same directory
+from . import views
 
 urlpatterns = [
     path('ingredient/add/', views.register_ingredient, name='register_ingredient'),
